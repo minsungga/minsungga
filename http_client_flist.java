@@ -71,15 +71,15 @@ public class MyClient {
 		ContentResponse response = request.send();	
 		
 		// Response 헤더정보
-		System.out.println("상태값 - " + response.getStatus() + " " + response.getReason());
+		System.out.println("상태값 - " + response.getStatus() + " " + response.getReason());	// 상태값 - 200 OK
 		
 		// Response Content (Json 포맷) 파싱
 		String strContent = response.getContentAsString();
-		System.out.println("응답데이터 - " + strContent);
+		System.out.println("응답데이터 - " + strContent);		// 응답데이터 - {"Result":"Ok"}
 		
 		Map<String, String> resMap = gson.fromJson(strContent, Map.class);
 		String result = resMap.get("Result");
-		System.out.println(result);
+		System.out.println(result);		// Ok
 		
 		// HTTP 통신 종료
 		httpClient.stop();
