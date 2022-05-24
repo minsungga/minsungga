@@ -1,0 +1,18 @@
+
+[Window] > [Preferences]
+1. 자동완성기능
+  1) Java > Editor > Content Assist
+    - Auto Activation 
+      : Enable auto activation 체크
+  2) Java > Editor > Content Assist > Advanced
+    - Java Non-Type Proposals 체크
+    - Java Proposals 체크
+  3) Ctrl + Space 눌러 확인하기 
+
+
+2. 자동 임포트 기능
+  1) Ctrl + Shift + m
+  2) Ctrl + S로 끝내기
+      - Java > Editor > Save Actions
+        : Perform the selected actions on save 체크
+        : Organize imports 체크
