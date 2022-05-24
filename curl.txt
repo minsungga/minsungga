@@ -1,0 +1,5 @@
+curl -d "{""QueueSize"":"2"}" -H "Content-Type: application/json" -X POST http://127.0.0.1:8080/CREATE/PLAY
+
+curl -d "{""Message"":"HELLO"}" -H "Content-Type: application/json" -X POST http://127.0.0.1:8080/SEND/PLAY
+
+curl -X GET http://127.0.0.1:8080/RECEIVE/PLAY
